@@ -45,7 +45,7 @@ export class ProductListComponent implements OnInit {
             error => this.errorMessage = <any> error);
 
     }
-    
+
     performFilter(filterBy: string): IProduct[] {
        filterBy = filterBy.toLocaleLowerCase();
        return this.products.filter((product: IProduct) =>
